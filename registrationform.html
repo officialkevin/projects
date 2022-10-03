@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      #maindiv {
+        margin: 0px;
+        display: flex;
+
+        align-items: center;
+        justify-content: center;
+      }
+      #main {
+        width: 50%;
+        height: 70vh;
+        padding: 5%;
+        margin: 100px auto;
+       
+      }
+      #submain{
+            display: flex;
+            
+        }
+      form {
+       padding: 10px;
+      }
+      input {
+        width: 400px;
+      }
+    </style>
+    <script>
+
+function fn(){
+    let nameref=document.getElementById("name")
+    let male=document.getElementById("man")
+    console.log(nameref.value)
+    console.log(male.value)
+let mainref= document.getElementById('maindiv')
+maindiv.append(nameref.value)
+}
+
+    </script>
+  </head>
+  <body>
+    <div id="maindiv">
+      <div id="main">
+        <div id="submain">
+          <h1>Registration form</h1>
+
+          <form action="">
+            <caption>
+              name:
+            </caption>
+            <input type="text" id="name"/><br>
+            <caption>
+              password:
+            </caption>
+            <input type="password" /><br>
+            <caption>
+              address:
+            </caption>
+            <textarea name="" id="" cols="45" rows="5"></textarea><br>
+            <caption>
+              email:
+            </caption>
+            <input type="email" /><br>
+            <caption>
+              phone number:
+            </caption>
+            <input type="number" /><br>
+            <br>
+            <caption>male</caption>
+            <input type="radio"name="gender" id="man"/>
+            <caption>female</caption>
+            <input type="radio"name="gender"/>
+            <label for="">technologies</label>
+            <input type="checkbox">
+
+            <button onclick="fn()">submit</button>
+          </form>
+          
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
