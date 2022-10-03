@@ -276,3 +276,8 @@ margin-bottom: 3%;
     padding: 0px;
     height: 50px;
 }
+
+@font-face {
+    font-family: "terminator-real-nfi-2";
+    src: url("/fonts.cdnfonts.com/css/terminator-real-nfi-2")
+  }
