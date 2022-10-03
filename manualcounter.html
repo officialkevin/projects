@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button:hover{
+            background-color: white;
+            color: black;
+
+            padding:12px
+            
+        
+
+        }
+        
+        #main{
+            border-radius: 10%;
+            width: 50%;
+            box-shadow: 0 0 100px red;
+            
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: yellow;      
+            height: 60%;      
+        }
+        #subdiv1{
+            display: flex;
+            
+            
+
+        }
+        #man{
+            color: black;
+        
+        }
+        h1{
+            color: red;
+        
+        }
+        button{
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px;
+            border: none;
+            color:white;
+            background-color: blue;
+           
+        }
+        
+        #fatherdiv{
+            display: flex;
+            
+        
+            height: 100vh;
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+        }
+       
+        #subdiv2{
+        
+
+            position: absolute;
+            bottom: 20%;
+        }
+    </style>
+  
+
+</head>
+<body>
+<div id="fatherdiv">
+    <div id="main">
+        <h1 id="man" onmouseover="fn()"
+        onmouseleave="fn2()"
+        >Manual Counter</h1>
+        <div id="subdiv1">
+            <h1 id="hfirst">0</h1>
+
+        </div>
+        <div id="subdiv2">
+            <button id="btn1" onclick="reset()">reset</button>
+            <button id="btn2" onclick="count()">count</button>
+            <button id="btn3">testing</button>
+        </div>
+
+
+    </div>
+</div>
+<script>
+    function count(){
+
+        let hfirstref=document.getElementById("hfirst")
+        let i=hfirstref.innerText
+
+        hfirstref.innerText=i
+        hfirstref.innerText++
+}
+
+function reset(){
+
+let hfirstref=document.getElementById("hfirst")
+hfirstref.innerText=0
+}
+
+function fn(){
+let manref=document.getElementById('man')
+manref.style.backgroundColor="red"
+manref.style.color="white"
+}
+function fn2(){
+let manref=document.getElementById('man')
+manref.style.backgroundColor="yellow"
+manref.style.color="red"
+}
+function fn3(){
+console.log('keivn')
+}
+let btn3=document.getElementById("btn3")
+btn3.addEventListener('click',fn3)
+    
+</script>
+</body>
+</html>
