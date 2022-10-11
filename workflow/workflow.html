@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="workflow.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="rootcontainer">
+    <div class="maincontainer">
+        <div class="wholesection">
+      <header>
+        <div id="expand">
+          <div class="back">
+            <div class="back">
+              <button id="back" class="arrow" onclick="toggleback()">
+                <i class="fa-solid fa-backward-step"></i>
+              </button>
+            </div>
+          </div>
+          <div class="homesection">
+            <h3 class="hometext">HOME</h3>
+            <div id="homeappend">
+
+            </div>
+            
+
+
+            <button onclick="newlist()" class="newnote"><p class="buttext">+ New Note</p></button>
+          </div>
+        </div>
+        <div class="navbar">
+          <div class="hom">
+            <button class="arrow toggle" onclick="toggle()">
+              <i class="fa-solid fa-bars"></i>
+            </button>
+            <button class="arrow">
+              <i class="fa-solid fa-arrow-left"></i>
+            </button>
+            <button class="arrow">
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+            <button class="arrow"><i class="fa-solid fa-house"></i></button>
+          </div>
+          <div class="search">
+            <input
+              type="text"
+              placeholder="
+                search"
+              class="sear"
+            />
+            <button class="arrow righticons">
+              <i class="fa-solid fa-user-plus"></i>
+            </button>
+            <button class="arrow righticons">
+              <i class="fa-regular fa-star"></i>
+            </button>
+            <button class="arrow tick">
+              <i class="fa-solid fa-check"></i>
+            </button>
+            <button class="arrow lefsearch">
+              <i class="fa-sharp fa-solid fa-bars"></i>
+            </button>
+          </div>
+        </div>
+      </header>
+      <section class="section2">
+
+    <div class="applist">
+        
+    </div>
+    <button onclick="newlist()" class="plus"><i class="fa-solid fa-plus"></i></button>
+
+
+
+      </section>
+    </div>
+    </div>
+</div>
+    <script src="workflow.js"></script>
+  </body>
+</html>
