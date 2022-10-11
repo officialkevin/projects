@@ -1,0 +1,114 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    /* background-color: #f1f3f6; */
+}
+.navbar{
+    background-color: #2c77f0;
+    
+    
+}
+nav{
+    background-color: #2c77f0;
+    /* margin: 0px 80px 0px 0px; */
+    padding:0px 80px 5px 0px; 
+    /* width: 100%; */
+    
+}
+
+
+.navbars{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    /* position: fixed; */
+
+}
+.sectionfirst{
+    display: flex;
+    justify-content: space-around;
+    
+}
+.section1{
+    box-shadow: 0 2px 3px -1px rgba(0, 0, 0, 0.3);
+}
+
+.imgdropdown{
+     height: 70px; 
+     width: 70px; 
+}
+.section2{
+    margin-top: 20px;
+}
+.bestofelec{
+    text-align: center;
+    
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* padding: 40px; */
+}
+.bestofelecitems{
+    padding: 25px;
+    
+}
+.section3{
+    display: flex;
+    justify-content: space-around;
+}
+.elecitems{
+    text-align: center;
+    margin: 20px;
+}
+.electricitems{
+    display: flex;
+    
+    align-items: center;
+}
+
+.p1{
+    padding: 20px 10px 0px 20px;
+    font-weight: 100;
+    
+}
+.bottomheading{
+    font-weight: 600;
+    color: grey;
+    
+}
+
+footer{
+    background-color: #172337;
+    padding: 40px;
+    display: flex;
+}
+
+
+.leftfootsec{
+    display: flex;
+    padding: 20px;
+    text-align: center;
+    /* border-right: 2px solid white; */
+    width: 60%;
+    height: 50vh;
+    margin-left: 30px;
+}
+.rightfootsec{
+    display: flex;
+    padding: 20px;
+    text-align: center;
+    border-right: 2px solid white;
+    width: 60%;
+    height: 50vh;
+
+}
+.footheadtit{
+    color: grey;
+    font-weight: 200;
+}
+.whitefootcontent{
+    color: white;
+    margin: 10px;
+}
